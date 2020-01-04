@@ -1,0 +1,57 @@
+﻿
+@{
+    ViewBag.Title = "LUIS-Youtube";
+}
+
+<div class="jumbotron">
+    <h2>LUIS play my favorite song !!!</h2>
+    
+</div>
+
+<div class="row" runat="server">
+    <div class="col-md-12">
+        <h2>Write the title of your favorite song !</h2>
+
+        @using (Html.BeginForm("Request", "Home", FormMethod.Post,
+                                      new { enctype = "multipart/form-data" }))
+        {
+            @Html.TextBox("TextRequest", null, new { @class = "form-control", placeholder = " Play Solomun" });
+
+            @*<input type="submit" value="Submit" class="btn btn-primary">*@
+            if (Model != null)
+            {
+
+                if (Model.Videos != null)
+                {
+                    if (@Model.luisResult.Entities.Count > 0)
+                    {
+
+                        <p><b>Song :</b> @Model.luisResult.Entities[0].Entity</p>
+
+                        <p><b>Query score  : </b> @Model.luisResult.TopScoringIntent.Score</p>
+                        <p><b>Sentiment score : </b> @Model.luisResult.SentimentAnalysis.Score</p>
+                        <hr />
+                        foreach (var video in Model.Videos)
+                        {
+                            <div class="border border-primary">
+                                <p>@video.Title Duration : @video.Duration</p>
+                                <a href="@video.Url">
+                                    <img src="@video.Thumbnail">
+                                </a>
+                            </div>
+                            <hr />
+
+                        }
+
+                    }
+                }
+                else
+                {
+                    <h2>No video !!!</h2>
+                }
+
+            }
+
+        }
+    </div>
+</div>

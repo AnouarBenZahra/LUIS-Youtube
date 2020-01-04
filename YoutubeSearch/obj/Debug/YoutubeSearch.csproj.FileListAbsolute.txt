@@ -1,0 +1,6 @@
+C:\Users\anoua\Downloads\YoutubeSearch-master\YoutubeSearch\YoutubeSearch\bin\Debug\YoutubeSearch.dll
+C:\Users\anoua\Downloads\YoutubeSearch-master\YoutubeSearch\YoutubeSearch\bin\Debug\YoutubeSearch.pdb
+C:\Users\anoua\Downloads\YoutubeSearch-master\YoutubeSearch\YoutubeSearch\obj\Debug\YoutubeSearch.csprojAssemblyReference.cache
+C:\Users\anoua\Downloads\YoutubeSearch-master\YoutubeSearch\YoutubeSearch\obj\Debug\YoutubeSearch.csproj.CoreCompileInputs.cache
+C:\Users\anoua\Downloads\YoutubeSearch-master\YoutubeSearch\YoutubeSearch\obj\Debug\YoutubeSearch.dll
+C:\Users\anoua\Downloads\YoutubeSearch-master\YoutubeSearch\YoutubeSearch\obj\Debug\YoutubeSearch.pdb
